@@ -1,0 +1,19 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "/*\r Theme Name: Avvocato\r Author: Stefan C.\r Theme URI: http://www.pwtthemes.com/theme/avvocato-free-responsive-wordpress-theme\r Author URI: http://www.stefanciobanu.com\r Description: Avvocato is a attorney wordpress theme with awesome responsive theme with number of amazing features, can be useful for multiple industries corporate, builders, photography,  magazine, corporate.. This theme is very easy to use for non coders also.\r Version: 1.0.9\r Tags: entertainment, one-column, two-columns, right-sidebar, grid-layout, footer-widgets, custom-menu, custom-background, featured-images, full-width-template, theme-options, threaded-comments, translation-ready\r License: GNU General Public License v3.0\r License URI: http://www.gnu.org/licenses/gpl-3.0.html\r Text Domain:  avvocato \r */",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galinovivan/travel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galinovivan/travel/issues"
+  },
+  "homepage": "https://github.com/galinovivan/travel#readme"
+}

@@ -1,0 +1,19 @@
+button {
+  @include clearBrowserStyle();
+}
+
+.button_base {
+  display: block;
+  width: 200px;
+  padding: 8px;
+  font-size: $baseFontSize;
+  background: $baseColor;
+  color: $white;
+  border: none;
+  background-image: none;
+  @include boxShadow(none);
+  @include clearBrowserStyle();
+  &.button_contact {
+    @include margin-align();
+  }
+}

@@ -1,0 +1,10 @@
+.form_base {
+  input:not([type="submit"]), textarea {
+    padding: 20px;
+    margin: 5px !important;
+    border-color: $black;
+  }
+  input[type="submit"] {
+    font-size: $baseFontSize;
+  }
+}

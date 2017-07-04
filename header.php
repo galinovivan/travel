@@ -13,9 +13,23 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <link rel="stylesheet" href="<?=get_template_directory_uri();?>/assets/css/common.css">
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<div id="contactModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                <h4 class="modal-title">Оставить заявку</h4>
+            </div>
+            <div class="modal-body">
+                <?= do_shortcode('[contact-form-7 id="42" title="Contact form 1"]'); ?>
+            </div>
+        </div>
+    </div>
+</div>
 	<div id="wrapper" class="wrapper">
 		<header id="header" class="header">
 			<div class="top-bar">

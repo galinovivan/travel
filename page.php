@@ -22,7 +22,7 @@
 				<div class="column-9-12 left">
 					<div class="gutter">
 						<div class="inner-page-container">
-							<article class="single-post">	
+							<article class="single-post">
 								<div class="article-text">
 									<?php the_content(); ?>
 									<div class="clear"></div>

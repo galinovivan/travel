@@ -3,8 +3,8 @@
  * 
  * @package Avvocato 
  */
-get_header(); 
-if ( have_posts() ) : 
+get_header();
+if ( have_posts() ) :
 if ( 'posts' == get_option( 'show_on_front')) {
 	include( get_home_template() );
 } else {	
@@ -12,3 +12,4 @@ if ( 'posts' == get_option( 'show_on_front')) {
 } 
 endif; 
 get_footer(); ?>
+

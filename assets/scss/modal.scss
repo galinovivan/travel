@@ -1,0 +1,30 @@
+.modal {
+  .modal-content {
+    padding: 20px 30px;
+    border-radius: 0;
+    @include boxShadow(none);
+    .close {
+      background: $transparent;
+      border: none;
+      @include clearBrowserStyle();
+    }
+    .modal-header {
+      border: none;
+      position: relative;
+      text-align: center;
+      .modal-title {
+        color: $black;
+      }
+      .close {
+        position: absolute;
+        right: 15px;
+        outline: none !important;
+        cursor: pointer;
+        z-index: 1000;
+        i {
+          font-size: $baseFontSize + 3;
+        }
+      }
+    }
+  }
+}

@@ -51,32 +51,25 @@
 <div class="section section-boxes">
 	<div class="container">
 		<div class="column-container boxes-container">
-			<?php 
-			if( get_theme_mod('avvocato_whyus_content_1')) { 
-			$queryslider = new WP_query('page_id='.get_theme_mod('avvocato_whyus_content_1' ,true)); 
-			while( $queryslider->have_posts() ) : $queryslider->the_post();
-			?> 
+
 			<div class="column-3-12">
 				<div class="gutter">
 					<article class="article-box">
 						<div class="article-icon">
-							<a class="fa fa-<?php echo sanitize_html_class(get_theme_mod('avvocato_whyus_icon_1',__( 'graduation-cap', 'avvocato' ))); ?>" href="<?php the_permalink(); ?>"></a>
+							<a class="fa fa-close" href="#"></a>
 						</div>
 						<div class="article-text">
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+							<h2><a href="#"><?php the_title(); ?></a></h2>
 							<p><?php the_excerpt(); ?></p>
 							<a class="button" href="<?php the_permalink(); ?>"><?php echo esc_html(get_theme_mod('avvocato_whyus_button_text_1',__( 'Read More', 'avvocato' ))); ?></a>
 						</div>
 					</article>
 				</div>
 			</div>			
-			<?php endwhile; wp_reset_postdata(); ?>
-			<?php } ?>			
-			<?php 
-			if( get_theme_mod('avvocato_whyus_content_2')) { 
-			$queryslider = new WP_query('page_id='.get_theme_mod('avvocato_whyus_content_2' ,true)); 
-			while( $queryslider->have_posts() ) : $queryslider->the_post();
-			?> 
+
+
+
+
 			<div class="column-3-12">
 				<div class="gutter">
 					<article class="article-box">
@@ -91,13 +84,7 @@
 					</article>
 				</div>
 			</div>			
-			<?php endwhile; wp_reset_postdata(); ?>
-			<?php } ?>		
-			<?php 
-			if( get_theme_mod('avvocato_whyus_content_3')) { 
-			$queryslider = new WP_query('page_id='.get_theme_mod('avvocato_whyus_content_3' ,true)); 
-			while( $queryslider->have_posts() ) : $queryslider->the_post();
-			?> 
+
 			<div class="column-3-12">
 				<div class="gutter">
 					<article class="article-box">
@@ -112,13 +99,7 @@
 					</article>
 				</div>
 			</div>			
-			<?php endwhile; wp_reset_postdata(); ?>
-			<?php } ?>		
-			<?php 
-			if( get_theme_mod('avvocato_whyus_content_4')) { 
-			$queryslider = new WP_query('page_id='.get_theme_mod('avvocato_whyus_content_4' ,true)); 
-			while( $queryslider->have_posts() ) : $queryslider->the_post();
-			?> 
+
 			<div class="column-3-12">
 				<div class="gutter">
 					<article class="article-box">
@@ -133,14 +114,13 @@
 					</article>
 				</div>
 			</div>			
-			<?php endwhile; wp_reset_postdata(); ?>
-			<?php } ?>					
+
 		</div>
-		<?php 
-		if( get_theme_mod('avvocato_info_box_text')) { 
-		$queryslider = new WP_query('page_id='.get_theme_mod('avvocato_info_box_text' ,true)); 
+		<?php
+		if( get_theme_mod('avvocato_info_box_text')) {
+		$queryslider = new WP_query('page_id='.get_theme_mod('avvocato_info_box_text' ,true));
 		while( $queryslider->have_posts() ) : $queryslider->the_post();
-		?> 
+		?>
 		<div class="gutter">
 			<div class="table-download">
 				<div class="table-row">
@@ -154,7 +134,7 @@
 			</div>
 		</div>		
 		<?php endwhile; wp_reset_postdata(); ?>
-		<?php } ?>			
+		<?php } ?>
 
 	</div> <!--  END container  -->
 </div> <!--  END section-boxes  -->
@@ -176,4 +156,7 @@
 		</div>
 	</div> <!--  ENd container  -->
 </div> <!--  END section-blog  -->
+    <div class="contact_button">
+        <button type="button" class="button_base button_contact" data-toggle="modal" data-target="#contactModal">Оставить заявку</button>
+    </div>
 <?php endwhile; ?>
