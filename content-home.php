@@ -9,7 +9,7 @@
 	<div class="owl-carousel main-carousel">
 		<?php 
 		if( get_theme_mod('avvocato_slider_content1')) { 
-		$queryslider = new WP_query();
+		$queryslider = new WP_query(array('category_name' => 'slider'));
 		while( $queryslider->have_posts() ) : $queryslider->the_post();
 		?> 
 		<div class="item" <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?> style="background-image: url('<?php echo esc_url(wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()))); ?>')"  <?php  endif; ?>>
