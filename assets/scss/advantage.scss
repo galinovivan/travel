@@ -1,0 +1,16 @@
+.boxes-container {
+  .article-box {
+    border: 0;
+    .article-text {
+      .title {
+        height: 42px;
+      }
+    }
+    .article-icon {
+      a {
+        text-decoration: none !important;
+        font-size: 33px;
+      }
+    }
+  }
+}

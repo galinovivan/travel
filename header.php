@@ -17,6 +17,11 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<div id="pagePreloader" class="preloader">
+    <div class="spinner">
+        <img src="<?=get_template_directory_uri();?>/assets/images/826.gif" />
+    </div>
+</div>
 <div id="contactModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -68,11 +73,14 @@
                             <h1 class="logo"><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
                         <?php endif; ?>
 						<nav class="menu-top-container">
-							<?php if ( has_nav_menu( 'avvocato-menu' ) ) { ?>
-							   <?php wp_nav_menu( array('container'=> '', 'theme_location' => 'avvocato-menu', 'items_wrap'  => '<ul class="menu-top">%3$s</ul>'  ) ); ?>
-							<?php } else { ?>
-								<?php wp_nav_menu(  array('container'=> '', 'theme_location' => 'avvocato-menu', 'menu_class'  => 'menu-top', 'items_wrap'  => '<ul class="menu-top">%3$s</ul>' ) ); ?>									
-							<?php } ?>	
+							<?php   // if ( has_nav_menu( 'avvocato-menu' ) ) { ?>
+							   <?php //wp_nav_menu( array('container'=> '', 'theme_location' => 'avvocato-menu', 'items_wrap'  => '<ul class="menu-top">%3$s</ul>'  ) ); ?>
+							<?php //} else { ?>
+								<?php //wp_nav_menu(  array('container'=> '', 'theme_location' => 'avvocato-menu', 'menu_class'  => 'menu-top', 'items_wrap'  => '<ul class="menu-top">%3$s</ul>' ) ); ?>
+							<?php // } ?>
+                            <ul class="menu-top">
+                                <li><a href="#contactModal" data-toggle="modal">Оставить заявку</a></li>
+                            </ul>
 						</nav>
 						<nav class="menu-top-mob-container">
 							<a class="icon-menu" href="#"><?php _e( 'Menu', 'avvocato' ); ?></a>

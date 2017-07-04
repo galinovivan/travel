@@ -9,7 +9,7 @@
 	<div class="owl-carousel main-carousel">
 		<?php 
 		if( get_theme_mod('avvocato_slider_content1')) { 
-		$queryslider = new WP_query('page_id='.get_theme_mod('avvocato_slider_content1' ,true)); 
+		$queryslider = new WP_query();
 		while( $queryslider->have_posts() ) : $queryslider->the_post();
 		?> 
 		<div class="item" <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?> style="background-image: url('<?php echo esc_url(wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()))); ?>')"  <?php  endif; ?>>
@@ -28,7 +28,7 @@
 		<?php } ?>	
 		<?php 
 		if( get_theme_mod('avvocato_slider_content2')) { 
-		$queryslider = new WP_query('page_id='.get_theme_mod('avvocato_slider_content2' ,true)); 
+		$queryslider = new WP_query(array('category_name' => 'slider'));
 		while( $queryslider->have_posts() ) : $queryslider->the_post();
 		?> 
 		<div class="item" <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?> style="background-image: url('<?php echo esc_url(wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()))); ?>')"  <?php  endif; ?>>
@@ -52,16 +52,18 @@
 	<div class="container">
 		<div class="column-container boxes-container">
 
-			<div class="column-3-12">
+			<div class="column-4-12">
 				<div class="gutter">
 					<article class="article-box">
 						<div class="article-icon">
-							<a class="fa fa-close" href="#"></a>
+							<a class="fa fa-users"></a>
 						</div>
 						<div class="article-text">
-							<h2><a href="#"><?php the_title(); ?></a></h2>
-							<p><?php the_excerpt(); ?></p>
-							<a class="button" href="<?php the_permalink(); ?>"><?php echo esc_html(get_theme_mod('avvocato_whyus_button_text_1',__( 'Read More', 'avvocato' ))); ?></a>
+                            <div class="title"> <h2>Почему нам доверяют свой отпуск</h2></div>
+					<div class="text">
+									<p>Мы сотрудничаем только с проверенными тур операторами. Все они имеют аккредитацию в РОСТУРИЗМе.
+                                Оформляя тур у нас вы застрахованы от не вылета. </p>
+                    </div>
 						</div>
 					</article>
 				</div>
@@ -70,50 +72,43 @@
 
 
 
-			<div class="column-3-12">
+			<div class="column-4-12">
 				<div class="gutter">
 					<article class="article-box">
 						<div class="article-icon">
-							<a class="fa fa-<?php echo sanitize_html_class(get_theme_mod('avvocato_whyus_icon_2',__( 'graduation-cap', 'avvocato' ))); ?>" href="<?php the_permalink(); ?>"></a>
+							<a class="fa fa-fire"></a>
 						</div>
 						<div class="article-text">
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<p><?php the_excerpt(); ?></p>
-							<a class="button" href="<?php the_permalink(); ?>"><?php echo esc_html(get_theme_mod('avvocato_whyus_button_text_2',__( 'Read More', 'avvocato' ))); ?></a>
+                            <div class="title"><h2>Горящие туры</h2></div>
+                            <div class="text">
+							<p>Мы гарантируем Самую низкую цену! За счет раннего бронирования или покупки настоящего
+                                горящего тура.
+                                Вы сэкономите до 85% на стоимости Вашей путевки. </p>
+                            </div>
 						</div>
 					</article>
 				</div>
 			</div>			
 
-			<div class="column-3-12">
+			<div class="column-4-12">
 				<div class="gutter">
 					<article class="article-box">
 						<div class="article-icon">
-							<a class="fa fa-<?php echo sanitize_html_class(get_theme_mod('avvocato_whyus_icon_3',__( 'graduation-cap', 'avvocato' ))); ?>" href="<?php the_permalink(); ?>"></a>
+							<a class="fa fa-briefcase"></a>
 						</div>
 						<div class="article-text">
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<p><?php the_excerpt(); ?></p>
-							<a class="button" href="<?php the_permalink(); ?>"><?php echo esc_html(get_theme_mod('avvocato_whyus_button_text_3',__( 'Read More', 'avvocato' ))); ?></a>
+                            <div class="title">
+							<h2>Как мы работаем?</h2>
+                            </div>
+                            <div class="text">
+							<p>Наша база горящих предложений и выгодных ранних  бронирований обновляеться Ежедневно.
+                                Наша задача предложить вам лучший отдых по минимальной цене. Юыстро и качественно
+                                оформить все необходимые документы и отправить вас на отдых вашей мечты!</p>
 						</div>
 					</article>
 				</div>
 			</div>			
 
-			<div class="column-3-12">
-				<div class="gutter">
-					<article class="article-box">
-						<div class="article-icon">
-							<a class="fa fa-<?php echo sanitize_html_class(get_theme_mod('avvocato_whyus_icon_4',__( 'graduation-cap', 'avvocato' ))); ?>" href="<?php the_permalink(); ?>"></a>
-						</div>
-						<div class="article-text">
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<p><?php the_excerpt(); ?></p>
-							<a class="button" href="<?php the_permalink(); ?>"><?php echo esc_html(get_theme_mod('avvocato_whyus_button_text_4',__( 'Read More', 'avvocato' ))); ?></a>
-						</div>
-					</article>
-				</div>
-			</div>			
 
 		</div>
 		<?php
@@ -156,7 +151,9 @@
 		</div>
 	</div> <!--  ENd container  -->
 </div> <!--  END section-blog  -->
+    <!--
     <div class="contact_button">
         <button type="button" class="button_base button_contact" data-toggle="modal" data-target="#contactModal">Оставить заявку</button>
     </div>
+    -->
 <?php endwhile; ?>

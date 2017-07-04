@@ -1,0 +1,16 @@
+.logo {
+  a {
+    text-decoration: none !important;
+    color: $baseColor !important;
+  }
+}
+
+.header-block {
+  .custom-logo-link {
+    img {
+      max-width: 200px;
+      height: auto;
+      margin-top: 15px;
+    }
+  }
+}

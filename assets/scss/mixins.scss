@@ -13,3 +13,14 @@
   -webkit-box-shadow: $prop;
   -moz-box-shadow: $prop;
 }
+
+@mixin flex_align($justify-content: center,$align-item: center ) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-item;
+  -webkit-align-items: $align-item;
+}

@@ -61,6 +61,7 @@
 		</footer> <!--  END footer  -->
 	</div> <!--  END wrapper  -->
 <script src="<?=get_template_directory_uri();?>/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?=get_template_directory_uri();?>/assets/js/dist/scripts.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
