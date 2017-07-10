@@ -7,47 +7,19 @@
 <?php if( get_theme_mod('avvocato_slider_content1') or get_theme_mod('avvocato_slider_content2')) { ?>
 <div class="section section-carousel">		
 	<div class="owl-carousel main-carousel">
-		<?php 
-		if( get_theme_mod('avvocato_slider_content1')) { 
-		$queryslider = new WP_query(array('category_name' => 'slider'));
-		while( $queryslider->have_posts() ) : $queryslider->the_post();
-		?> 
-		<div class="item" <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?> style="background-image: url('<?php echo esc_url(wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()))); ?>')"  <?php  endif; ?>>
-			<div class="overlay">
-				<div class="container">
-					<div class="gutter">
-						<div class="carousel-text column-9-12 center text-center animate-top-down">
-							<h4><?php the_title(); ?></h4>
-							<p><?php the_excerpt(); ?></p>
-						</div>
-					</div>
-				</div>
-			</div> 
-		</div>			
-		<?php endwhile; wp_reset_postdata(); ?>
-		<?php } ?>	
-		<?php 
-		if( get_theme_mod('avvocato_slider_content2')) { 
-		$queryslider = new WP_query(array('category_name' => 'slider'));
-		while( $queryslider->have_posts() ) : $queryslider->the_post();
-		?> 
-		<div class="item" <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?> style="background-image: url('<?php echo esc_url(wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()))); ?>')"  <?php  endif; ?>>
-			<div class="overlay">
-				<div class="container">
-					<div class="gutter">
-						<div class="carousel-text column-9-12 center text-center animate-top-down">
-							<h4><?php the_title(); ?></h4>
-							<p><?php the_excerpt(); ?></p>
-						</div>
-					</div>
-				</div>
-			</div> 
-		</div>			
-		<?php endwhile; wp_reset_postdata(); ?>
-		<?php } ?>						
+
 	</div>
 </div>
 <?php }  ?>
+<div class="trust_block">
+    <div class="container">
+        <div class="column-container">
+            <div class="block_heading">
+                <h2 class="md_font-size">Почему нам стоит доверять?</h2>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="section section-boxes">
 	<div class="container">
 		<div class="column-container boxes-container">
@@ -111,6 +83,55 @@
 
 
 		</div>
+        <div class="container">
+            <div class="column-container">
+                <div class="block_heading mar_bott_25">
+                    <h2>Оставьте заявку прямо сейчас!</h2>
+                </div>
+                <?php get_template_part('form', 'contact');?>
+            </div>
+        </div>
+        <div class="how_work mar_top_50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block_heading">
+                            <h2 class="md_font-size">Как мы работаем</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fa fa-user-circle-o"></i>
+                            </div>
+                            <div class="title"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="item">
+                            <div class="icon"></div>
+                            <div class="title"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="item">
+                            <div class="icon"></div>
+                            <div class="title"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="item">
+                            <div class="icon">
+
+                            </div>
+                            <div class="title"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<?php
 		if( get_theme_mod('avvocato_info_box_text')) {
 		$queryslider = new WP_query('page_id='.get_theme_mod('avvocato_info_box_text' ,true));

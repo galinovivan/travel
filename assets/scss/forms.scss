@@ -6,5 +6,18 @@
   }
   input[type="submit"] {
     font-size: $baseFontSize;
+    display: block !important;
+    @include margin-align();
+  }
+}
+
+
+.contact_form_page {
+  .form_base {
+    width: 60%;
+    @include margin-align();
+    input[type="submit"] {
+      width: 250px;
+    }
   }
 }
