@@ -1,6 +1,23 @@
-button {
+.button {
   outline: none !important;
+  box-sizing: border-box;
   @include clearBrowserStyle();
+  &.md {
+    text-decoration: none !important;
+    color: $white !important;
+    padding: 0 20px;
+    width: 155px;
+    font-size: 16px;
+  }
+  &.lg {
+    width: 300px;
+    @include margin-align();
+    overflow: visible;
+    height: 41px;
+    font-size: 16px;
+    padding: 3px 0;
+    text-decoration: none !important;
+  }
 }
 
 .button_base {

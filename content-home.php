@@ -15,7 +15,12 @@
 <div class="coral_search">
     <div class="container">
         <div class="column-container">
+            <div class="coral_custom_search">
             <h2 class="md_font-size">Здесь Поиск coral </h2>
+            </div>
+            <div class="target_button mar_top_50">
+                <a href="tel:+78123184643" class="button md margin_center">Поиск тура</a>
+            </div>
         </div>
     </div>
 </div>
@@ -146,7 +151,9 @@
             <div class="container">
                 <div class="coulumn_container">
                     <div class="block_heading">
-                        <h2>Лучшее предложение дня</h2>
+                        <a href="https://www.instagram.com/coral.petrogradskaya/" target="_blank" class="button lg">
+                            Предложения дня на инстаграм
+                        </a>
                     </div>
                     <div class="best_photo">
                         <?php //echo wdi_feed(array('id'=>'1')); ?>
@@ -183,6 +190,11 @@
                         <?php //echo wdi_feed(array('id'=>'2')); ?>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="last_button mar_top_50">
+            <div class="container">
+                <a href="tel:+78123184643" class="button md margin_center">Забронировать</a>
             </div>
         </div>
 		<?php

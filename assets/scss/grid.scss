@@ -25,3 +25,7 @@
     width: 1100px !important;
   }
 }
+
+.margin_center {
+  @include margin-align();
+}
