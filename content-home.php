@@ -99,7 +99,7 @@
                 <?php get_template_part('form', 'contact');?>
             </div>
         </div>
-        <div class="how_work mar_top_50">
+        <div class="how_work mar_top_50 mar_bott_100">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -142,7 +142,7 @@
                 </div>
             </div>
         </div>
-        <div class="best_seller mar_top_50">
+        <div class="best_seller mar_top_50 mar_bott_100">
             <div class="container">
                 <div class="coulumn_container">
                     <div class="block_heading">
@@ -154,7 +154,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-blog">
+        <div class="section-blog mar_bott_100">
             <div class="container">
                 <div class="column-container blog-container">
                     <div class="column-12-12">
