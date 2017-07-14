@@ -15,7 +15,7 @@
 <div class="coral_search">
     <div class="container">
         <div class="column-container">
-            <h2 class="md_font-size">Поиск coral </h2>
+            <h2 class="md_font-size">Здесь Поиск coral </h2>
         </div>
     </div>
 </div>
@@ -135,7 +135,7 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="title">
-                                <p>отправляем. Результат на почту и перезваниваем</p>
+                                <p>Отправляем Результат на почту и перезваниваем</p>
                             </div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                         <h2>Лучшее предложение дня</h2>
                     </div>
                     <div class="best_photo">
-                        <?php echo wdi_feed(array('id'=>'1')); ?>
+                        <?php //echo wdi_feed(array('id'=>'1')); ?>
                     </div>
                 </div>
             </div>
@@ -177,10 +177,10 @@
             <div class="container">
                 <div class="coulumn_container">
                     <div class="block_heading">
-                        <h2>Лучшее предложение дня</h2>
+                        <h2>Отзывы</h2>
                     </div>
                     <div class="best_photo">
-                        <?php echo wdi_feed(array('id'=>'2')); ?>
+                        <?php //echo wdi_feed(array('id'=>'2')); ?>
                     </div>
                 </div>
             </div>
