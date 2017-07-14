@@ -10,7 +10,15 @@
 
 	</div>
 </div>
+
 <?php }  ?>
+<div class="coral_search">
+    <div class="container">
+        <div class="column-container">
+            <h2 class="md_font-size">Поиск coral </h2>
+        </div>
+    </div>
+</div>
 <div class="trust_block">
     <div class="container">
         <div class="column-container">
@@ -85,7 +93,7 @@
 		</div>
         <div class="container">
             <div class="column-container">
-                <div class="block_heading mar_bott_25">
+                <div class="block_heading mar_bott_50">
                     <h2>Оставьте заявку прямо сейчас!</h2>
                 </div>
                 <?php get_template_part('form', 'contact');?>
@@ -100,33 +108,45 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-3">
+                <div class="column-container">
+                    <div class="column-3-12 right_arrow">
                         <div class="item">
                             <div class="icon">
-                                <i class="fa fa-user-circle-o"></i>
+                                <i class="fa fa-user"></i>
                             </div>
-                            <div class="title"></div>
+                            <div class="title">
+                                <p>Оставляете заявку на сайте</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-3">
-                        <div class="item">
-                            <div class="icon"></div>
-                            <div class="title"></div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                        <div class="item">
-                            <div class="icon"></div>
-                            <div class="title"></div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
+                    <div class="column-3-12 right_arrow">
                         <div class="item">
                             <div class="icon">
-
+                                <i class="fa fa-phone"></i>
                             </div>
-                            <div class="title"></div>
+                            <div class="title">
+                                <p>Наш менеджер вам перезваниет</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-3-12 right_arrow">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fa fa-archive"></i>
+                            </div>
+                            <div class="title">
+                                <p>Еще один пункт</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-3-12">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fa fa-archive"></i>
+                            </div>
+                            <div class="title">
+                                <p>Еще один пункт</p>
+                            </div>
                         </div>
                     </div>
                 </div>

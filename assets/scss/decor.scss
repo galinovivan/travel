@@ -1,0 +1,13 @@
+.right_arrow {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 25px;
+    background: url('../images/small_arrow.png') no-repeat;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+  }
+}
