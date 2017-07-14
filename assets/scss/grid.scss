@@ -9,3 +9,9 @@
 .mar_top_50 {
   margin-top: 50px;
 }
+
+.column-3-12 {
+    @media screen and (max-width: 991px) {
+      width: 100% !important;
+    }
+}

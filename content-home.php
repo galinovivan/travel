@@ -109,45 +109,78 @@
                     </div>
                 </div>
                 <div class="column-container">
-                    <div class="column-3-12 right_arrow">
+                    <div class="column-4-12 right_arrow">
                         <div class="item">
                             <div class="icon">
                                 <i class="fa fa-user"></i>
                             </div>
                             <div class="title">
-                                <p>Оставляете заявку на сайте</p>
+                                <p>принимаем вашу заявку по телефону или online</p>
                             </div>
                         </div>
                     </div>
-                    <div class="column-3-12 right_arrow">
+                    <div class="column-4-12 right_arrow">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <div class="title">
+                                <p>обрабатываем в запрос в течении  1 часа</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-4-12">
                         <div class="item">
                             <div class="icon">
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="title">
-                                <p>Наш менеджер вам перезваниет</p>
+                                <p>отправляем. Результат на почту и перезваниваем</p>
                             </div>
                         </div>
                     </div>
-                    <div class="column-3-12 right_arrow">
-                        <div class="item">
-                            <div class="icon">
-                                <i class="fa fa-archive"></i>
-                            </div>
-                            <div class="title">
-                                <p>Еще один пункт</p>
+                </div>
+            </div>
+        </div>
+        <div class="best_seller mar_top_50">
+            <div class="container">
+                <div class="coulumn_container">
+                    <div class="block_heading">
+                        <h2>Лучшее предложение дня</h2>
+                    </div>
+                    <div class="best_photo">
+                        <?php echo wdi_feed(array('id'=>'1')); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-blog">
+            <div class="container">
+                <div class="column-container blog-container">
+                    <div class="column-12-12">
+                        <div class="gutter">
+                            <div class="inner-page-container">
+                                <article class="single-post">
+                                    <div class="article-text">
+                                       <?php while (have_posts()): the_post(); ?>
+                                        <?php the_content(); ?>
+                                        <?php endwhile; ?>
+                                    </div>
+                                </article>
                             </div>
                         </div>
                     </div>
-                    <div class="column-3-12">
-                        <div class="item">
-                            <div class="icon">
-                                <i class="fa fa-archive"></i>
-                            </div>
-                            <div class="title">
-                                <p>Еще один пункт</p>
-                            </div>
-                        </div>
+                </div>
+            </div> <!--  ENd container  -->
+        </div>
+        <div class="best_seller mar_top_50">
+            <div class="container">
+                <div class="coulumn_container">
+                    <div class="block_heading">
+                        <h2>Лучшее предложение дня</h2>
+                    </div>
+                    <div class="best_photo">
+                        <?php echo wdi_feed(array('id'=>'2')); ?>
                     </div>
                 </div>
             </div>
@@ -175,23 +208,7 @@
 	</div> <!--  END container  -->
 </div> <!--  END section-boxes  -->
 <?php while (have_posts()) : the_post(); ?>  
-<div class="section-blog">
-	<div class="container">
-		<div class="column-container blog-container">			
-			<div class="column-12-12">
-				<div class="gutter">
-					<div class="inner-page-container">
-						<article class="single-post">	
-							<div class="article-text">
-								<?php the_content(); ?>
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>			
-		</div>
-	</div> <!--  ENd container  -->
-</div> <!--  END section-blog  -->
+ <!--  END section-blog  -->
     <!--
     <div class="contact_button">
         <button type="button" class="button_base button_contact" data-toggle="modal" data-target="#contactModal">Оставить заявку</button>

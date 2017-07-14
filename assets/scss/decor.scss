@@ -9,5 +9,8 @@
     position: absolute;
     right: -20px;
     top: 50%;
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
   }
 }
