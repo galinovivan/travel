@@ -14,3 +14,17 @@
     }
   }
 }
+
+.right_line {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 75px;
+    position: absolute;
+    right: 37px;
+    top: -3px;
+    background: $white;
+  }
+}

@@ -6,11 +6,43 @@
 }
 
 .header-block {
+  background: $coralBaseColor;
+  padding: 20px 0;
   .custom-logo-link {
+    display: block;
+    float: left;
+    max-width: 200px;
     img {
       max-width: 200px;
       height: auto;
       margin-top: 15px;
     }
   }
+  .tour_title {
+    display: block;
+    float: left;
+    max-width: 200px;
+    margin-top: 10px;
+  }
+  .header_adress {
+    padding-top: 15px;
+    * {
+      color: $white;
+    }
+    ul {
+      li {
+        margin-bottom: 5px;
+        a {
+          font-size: 14px;
+        }
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .menu-top-container {
+    padding-top: 20px;
+  }
 }
+

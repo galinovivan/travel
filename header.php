@@ -37,54 +37,61 @@
 </div>
 	<div id="wrapper" class="wrapper">
 		<header id="header" class="header">
-			<div class="top-bar">
-				<div class="container">
-					<div class="column-container top-bar-container">
-						<div class="column-8-12 left">
-							<div class="gutter">
-								<ul class="top-bar-contact">
-								    <?php if(get_theme_mod('avvocato_header_phone')) { ?><li><i class="fa fa-phone"></i><a href="<?php echo esc_url( 'phone:'. esc_attr(get_theme_mod('avvocato_header_phone'))); ?>"><?php echo esc_attr(get_theme_mod('avvocato_header_phone')); ?></a></li><?php } ?>
-									<?php if(get_theme_mod('avvocato_header_email')) { ?><li><i class="fa fa-envelope"></i><a href="<?php echo esc_url( 'mailto:' . antispambot(sanitize_email(get_theme_mod('avvocato_header_email')))); ?>"><?php echo antispambot(sanitize_email(get_theme_mod('avvocato_header_email'))); ?></a></li><?php } ?>
-								</ul>
-							</div>
-						</div>
-						<?php if(get_theme_mod('avvocato_social_media_code1') or get_theme_mod('avvocato_social_media_code2') or get_theme_mod('avvocato_social_media_code3') or get_theme_mod('avvocato_social_media_code4') or get_theme_mod('avvocato_social_media_code5')) { ?>
-						<div class="column-4-12 right">
-							<div class="gutter">
-								<ul class="social">
-									<?php if(get_theme_mod('avvocato_social_media_code1')) { ?><li><a class="fa-<?php echo sanitize_html_class(get_theme_mod('avvocato_social_media_code1')); ?>" href="<?php echo esc_url(get_theme_mod('avvocato_social_media_link1')); ?>"></a></li><?php } ?>																
-									<?php if(get_theme_mod('avvocato_social_media_code2')) { ?><li><a class="fa-<?php echo sanitize_html_class(get_theme_mod('avvocato_social_media_code2')); ?>" href="<?php echo esc_url(get_theme_mod('avvocato_social_media_link2')); ?>"></a></li><?php } ?>																
-									<?php if(get_theme_mod('avvocato_social_media_code3')) { ?><li><a class="fa-<?php echo sanitize_html_class(get_theme_mod('avvocato_social_media_code3')); ?>" href="<?php echo esc_url(get_theme_mod('avvocato_social_media_link3')); ?>"></a></li><?php } ?>																
-									<?php if(get_theme_mod('avvocato_social_media_code4')) { ?><li><a class="fa-<?php echo sanitize_html_class(get_theme_mod('avvocato_social_media_code4')); ?>" href="<?php echo esc_url(get_theme_mod('avvocato_social_media_link4')); ?>"></a></li><?php } ?>																
-									<?php if(get_theme_mod('avvocato_social_media_code5')) { ?><li><a class="fa-<?php echo sanitize_html_class(get_theme_mod('avvocato_social_media_code5')); ?>" href="<?php echo esc_url(get_theme_mod('avvocato_social_media_link5')); ?>"></a></li><?php } ?>									
-								</ul>
-							</div>
-						</div>
-						<?php } ?>
-					</div>
-				</div> <!--  END container  -->
-			</div> <!--  END top-bar  -->
+
 			<div class="header-block">
-				<div class="container">
+				<!--<div class="container">
 					<div class="gutter clearfix">
                         <?php if ( has_custom_logo() ) : ?>
                             <?php avvocato_the_custom_logo(); ?>
                         <?php else : ?>
                             <h1 class="logo"><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
                         <?php endif; ?>
+                        <div class="tour_title">
+                            <span class="white">
+                                Tour Sale <br />
+                            Турагенство
+                            </span>
+
+                        </div>
 						<nav class="menu-top-container">
-							<?php   // if ( has_nav_menu( 'avvocato-menu' ) ) { ?>
-							   <?php //wp_nav_menu( array('container'=> '', 'theme_location' => 'avvocato-menu', 'items_wrap'  => '<ul class="menu-top">%3$s</ul>'  ) ); ?>
-							<?php //} else { ?>
-								<?php //wp_nav_menu(  array('container'=> '', 'theme_location' => 'avvocato-menu', 'menu_class'  => 'menu-top', 'items_wrap'  => '<ul class="menu-top">%3$s</ul>' ) ); ?>
-							<?php // } ?>
+
                             <ul class="menu-top">
                                 <li><a href="#contactModal" data-toggle="modal">Оставить заявку</a></li>
                             </ul>
 						</nav>
 
 					</div>
-				</div> <!--  END container  -->
+				</div> -->
+                <div class="container">
+                    <div class="column-container">
+                        <div class="column-3-12 right_line">
+                            <?php avvocato_the_custom_logo(); ?>
+                        </div>
+                        <div class="column-3-12">
+                            <div class="tour_title">
+                                <h3 class="white">Tour Sale <br />
+                                    Турагентсво</h3>
+                            </div>
+                        </div>
+                        <div class="column-3-12">
+                            <div class="header_adress">
+                                <ul>
+                                    <?php if(get_theme_mod('avvocato_header_phone')) { ?><li><i class="fa fa-phone"></i><a href="<?php echo esc_url( 'phone:'. esc_attr(get_theme_mod('avvocato_header_phone'))); ?>"><?php echo esc_attr(get_theme_mod('avvocato_header_phone')); ?></a></li><?php } ?>
+                                    <?php if(get_theme_mod('avvocato_header_email')) { ?><li><i class="fa fa-envelope"></i><a href="<?php echo esc_url( 'mailto:' . antispambot(sanitize_email(get_theme_mod('avvocato_header_email')))); ?>"><?php echo antispambot(sanitize_email(get_theme_mod('avvocato_header_email'))); ?></a></li><?php } ?>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column-3-12">
+                            <nav class="menu-top-container">
+
+                                <ul class="menu-top">
+                                    <li><a href="#contactModal" data-toggle="modal" class="button md">Оставить заявку</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!--  END container  -->
 			</div> <!--  END header-block  -->
 		</header> <!--  END header  -->
 		<div id="content" class="content">
