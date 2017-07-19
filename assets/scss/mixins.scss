@@ -24,3 +24,11 @@
   align-items: $align-item;
   -webkit-align-items: $align-item;
 }
+
+@mixin clearfix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

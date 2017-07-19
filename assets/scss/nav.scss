@@ -1,10 +1,20 @@
-nav {
-  .menu-top {
+.main_nav {
+  background: $baseColor;
+  ul {
+    @include clearfix();
     li {
       a {
-        text-decoration: none !important;
-        color: $baseColor;
-        font-weight: 700;
+        color: $white !important;
+        border: none !important;
+        &:hover {
+          background: $transparent !important;
+        }
+      }
+      &.current_page_item {
+         a {
+           color: $white;
+           font-weight: 800;
+         }
       }
     }
   }

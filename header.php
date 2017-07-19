@@ -95,5 +95,9 @@
                 </div>
                 <!--  END container  -->
 			</div> <!--  END header-block  -->
-		</header> <!--  END header  -->
+		</header>
+        <!--  END header  -->
+        <div class="main_nav">
+            <?php include ('template-parts/nav.php'); ?>
+        </div>
 		<div id="content" class="content">
