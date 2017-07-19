@@ -17,10 +17,19 @@
             <?php if(get_theme_mod('avvocato_header_email')) { ?><li><i class="fa fa-envelope"></i><a href="<?php echo esc_url( 'mailto:' . antispambot(sanitize_email(get_theme_mod('avvocato_header_email')))); ?>"><?php echo antispambot(sanitize_email(get_theme_mod('avvocato_header_email'))); ?></a></li><?php } ?>
             </ul>
         </div>
+        <div class="map_container">
+            <div id="map"></div>
+        </div>
         <div class="content">
             <?php the_content(); ?>
         </div>
     </div>
 <?php endwhile; ?>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo4YEOsU9tAfPJ6oPn2mb7GMQhDlfqhfI&callback=initMap"></script>
 <?php get_footer(); ?>
+
+
+
+
+
 
