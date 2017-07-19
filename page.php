@@ -1,47 +1,12 @@
-<?php
-/**
- * The template for displaying all pages.
- *
- * @package Avvocato
- */
- get_header(); ?>
- <?php while (have_posts()) : the_post(); ?>
-	<section class="section section-page-title" <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?> style="background-image: url('<?php echo esc_url(wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()))); ?>')"  <?php  endif; ?>>
-		<div class="overlay">
-			<div class="container">
-				<div class="gutter">
-					<p class="page-title"><?php the_title(); ?></p>
-					<?php the_excerpt(); ?>
-				</div>
-			</div> <!--  END container  -->
-		</div> <!--  END overlay  -->
-	</section> <!--  END section-page-title  -->
-	<div class="section section-blog">
-		<div class="container">
-			<div class="column-container blog-container">			
-				<div class="column-9-12 left">
-					<div class="gutter">
-						<div class="inner-page-container">
-							<article class="single-post">
-								<div class="article-text">
-									<?php the_content(); ?>
-									<div class="clear"></div>
-								</div>
-								<div class="padinate-page"><?php wp_link_pages(); ?></div> 	
-								<div class="comments">
-									<?php comments_template(); ?>
-								</div>
-							</article>
-						</div>
-					</div>
-				</div>
-				<div class="column-3-12 right">
-					<div class="gutter">
-						<?php  get_sidebar(); ?>
-					</div>
-				</div>				
-			</div>
-		</div> <!--  ENd container  -->
-	</div> <!--  END section-blog  -->
-<?php endwhile; ?>		
+<?php get_header(); ?>
+<?php while(have_posts()): the_post(); ?>
+    <div class="container page_content">
+        <h1 class="page_title"><?=get_the_title();?></h1>
+        <div class="content_container">
+    <?php the_content(); ?>
+            <?php if(get_theme_mod('avvocato_header_phone')) { ?><li><i class="fa fa-phone"></i><a href="<?php echo esc_url( 'phone:'. esc_attr(get_theme_mod('avvocato_header_phone'))); ?>"><?php echo esc_attr(get_theme_mod('avvocato_header_phone')); ?></a></li><?php } ?>
+            <?php if(get_theme_mod('avvocato_header_email')) { ?><li><i class="fa fa-envelope"></i><a href="<?php echo esc_url( 'mailto:' . antispambot(sanitize_email(get_theme_mod('avvocato_header_email')))); ?>"><?php echo antispambot(sanitize_email(get_theme_mod('avvocato_header_email'))); ?></a></li><?php } ?>
+        </div>
+    </div>
+<?php endwhile; ?>
 <?php get_footer(); ?>

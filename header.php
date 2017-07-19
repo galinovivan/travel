@@ -71,6 +71,8 @@
                             <div class="tour_title">
                                 <h3 class="white">Tour Sale <br />
                                     Турагентсво</h3>
+                                <p class="white">ИНН 780243434306</p>
+                                <p class="white">ОГРНИП 31678470274662</p>
                             </div>
                         </div>
                         <div class="column-3-12">

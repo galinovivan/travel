@@ -29,3 +29,7 @@
 .margin_center {
   @include margin-align();
 }
+
+.page_content {
+  min-height: 80vh;
+}
