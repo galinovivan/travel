@@ -16,7 +16,7 @@
     <div class="container">
         <div class="column-container">
             <div class="coral_custom_search">
-            <h2 class="md_font-size">Здесь Поиск coral </h2>
+                <IFRAME name="searchTable" src="<http://online.coral.ru/UI/Integration/CompactSearch.aspx> http://online.coral.ru/UI/Integration/CompactSearch.aspx"  frameborder="0" width="700" height="445"></IFRAME>
             </div>
             <div class="target_button mar_top_50">
                 <a href="tel:+78123184643" class="button md margin_center">Поиск тура</a>
